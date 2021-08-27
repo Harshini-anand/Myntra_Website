@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Myntra Store | Ecommerce</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="images\myntra logo2.1.jpg" width="125px"></div>
+                <div class="menu-bar">
+                <ul class="navigation">
+                    <li class="active"><a href ="index.html">Home</a></li>
+                    <li><a href ="#">Products <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown__menu">
+                                    <ul>
+                                        <li><a href="#">Men</a></li>
+                                        <li class="hover-me"><a href="#"> Women    <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                            <div class="dropdown__menu-2">
+                                                <ul>
+                                                    <li><a href="#">Sarees</a></li>
+                                                    <li><a href="#">Kurtis</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                </ul>
+                                    </div>
+                                        </li>
+                                        <li><a href="#">kids</a></li>
+                                        <li><a href="#">lipsticks</a></li>
+                                        <li><a href="#">Hair products</a></li>
+                                        <li><a href="#">Mobile</a></li>
+                                        <li><a href="#">Watches</a></li>
+                                        <li><a href="#">Wallets</a></li>
+                                        <li><a href="#">Glasses</a></li>
+                                    </ul>
+                        </div>
+                        
+                    </li>
+                    <li><a href ="index.html">About</a></li>
+                    <li><a href ="index.html">Contact</a></li>
+                    <li><a href ="index.html">Account <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown__menu">
+                            <ul>
+                                <li><a href="#">Sign up</a></li>
+                                <li><a href="#">Login</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                  
+                </ul>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <img src="images/cart.png" width="30px" height="35px">
+                <img src="images\menu.png" class="menu-icon" onclick="menutoggle()">
+        </header>
+        
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+            <div class="logo">
+              </div>
+
+            </div>
+
+         
+            
+          </div> 
+        </div>
+    </div>
+        <hr>
+
+
+
+      
+
+    <h2 class="title"></h2>
+
+    <center> <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div></center>
+
+<!----footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our App for Android and ios mobile phones.</p>
+                <div class="app-logo">
+                    <img src="images\play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="mynta.jpeg" width="100" height="70">
+                <p>Our purpose is to make the pleasure and benefits of cool shopping experience.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - myntra webpage by HARSHINI ANAND</p>
+    </div>
+</div>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px"
+        }
+            else
+            {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+        
+</script>
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SamllImg = document.getElementsByClassName("small-img");
+        SamllImg[0].onclick = function()
+         {
+            ProductImg.src = SmallImg[0].src;
+         }
+        SamllImg[1].onclick = function()
+         {
+            ProductImg.src = SmallImg[1].src;
+         }
+        SamllImg[2].onclick = function()
+         {
+            ProductImg.src = SmallImg[2].src;
+         }
+        SamllImg[3].onclick = function()
+         {
+            ProductImg.src = SmallImg[3].src;
+         }
+</script>
+</body>
+</html>
